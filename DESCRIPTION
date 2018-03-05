@@ -1,0 +1,15 @@
+Package: fewClusterPvals
+Title: Calculate Cluster-Robust p-Values and Confidence Intervals based on Webb (2013)
+Version: 0.0.0.9000
+Authors@R: person("Savita", "Ramaprasad", email = "savita.tungu@gmail.com", role = c("aut", "cre"))
+Description: Calculate cluster robust p-values and confidence intervals using wild cluster bootstrapped t-statistics based on Webb (2013).
+Depends: R (>= 3.4.2)
+Imports: 
+    sandwich, 
+    lmtest, 
+    stats, 
+    utils
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
