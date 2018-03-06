@@ -1,16 +1,16 @@
-#### Calculate Cluster-Robust p-Values and Confidence Intervals Based on Webb (2013)
+### Calculate Cluster-Robust p-Values and Confidence Intervals Based on Webb (2013)
 
-##### Description
+#### Description
  Calculate cluster robust p-values and confidence intervals using wild cluster bootstrapped t-statistics based on Webb (2013) which is the prefered method to use when the number of clusters are < 15. Webb, M. D. (2013). <Reworking wild bootstrap based inference for clustered errors (No. 1315). Queen's Economics Department Working Paper>
  
-##### Usage
+#### Usage
 cluster.webb.glm(mod, dat, cluster, vars.boot = NULL, 
 ci.level = 0.95, impose.null = TRUE, boot.reps = 1000, 
 report = TRUE, prog.bar = TRUE, output.replicates = FALSE) 
 
 
 
-##### Arguments
+#### Arguments
 
   **mod** A linear model estimated using glm.
       
@@ -34,14 +34,14 @@ report = TRUE, prog.bar = TRUE, output.replicates = FALSE)
 
 
 
-##### Value
+#### Value
 
 **p.values** A vector of estimated p-values.
 	
 **ci** A matrix of confidence intervals, reported when null is not imposed.
 
 
-##### References
+#### References
 	
 Esarey, Justin, and Andrew Menger. 2017. "Practical and Effective Approaches to Dealing with Clustered Data." Political Science Research and Methods forthcoming: 1-35. <URL:http://jee3.web.rice.edu/cluster-paper.pdf>.  
 	
