@@ -101,7 +101,7 @@ cluster.webb.glm <- function (mod, dat, cluster, vars.boot = NULL, ci.level = 0.
             if (prog.bar == TRUE) {
                 close(pb)
             }
-            p.store[j] <- 1 - (sum(abs(w[offset + j]) > abs(wald.store))/boot.reps)
+            p.store[j] <- min(sum(abs(w[offset + j]) > abs(wald.store)), sum(abs(w[offset + j]) < abs(wald.store)))/boot.reps
             w.store[, j] <- wald.store
         } 
         p.store <- p.store[ind.variables.boot]
